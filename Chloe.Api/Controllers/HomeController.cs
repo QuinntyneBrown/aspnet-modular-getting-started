@@ -8,19 +8,19 @@ using System.Web.Http;
 
 namespace Chloe.Api.Controllers
 {
-    public class BookController : ApiController
+    public class HomeController : ApiController
     {
-        public BookController(IBookService bookService)
+        public HomeController(IChloeService chloeService)
         {
-            this.bookService = bookService;
+            this.chloeService = chloeService;
         }
 
         [HttpGet]
         public IHttpActionResult Get()
         {
-            return Ok();
+            return Ok(chloeService.GetHomePageViewModel());
         }
 
-        protected readonly IBookService bookService;
+        protected readonly IChloeService chloeService;
     }
 }

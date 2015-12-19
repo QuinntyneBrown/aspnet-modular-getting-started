@@ -1,13 +1,17 @@
-﻿using System;
+﻿using Chloe.ViewModels.Contracts;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Chloe.ViewModels
 {
     public class Page
     {
+        public Page()
+        {
+            this.Components = new HashSet<dynamic>();
+        }
+
         public string Title { get; set; }
+
+        public ICollection<dynamic> Components { get; set; }
     }
 }

@@ -1,5 +1,7 @@
 using Chloe.Data;
 using Chloe.Data.Contracts;
+using Chloe.NBAClient;
+using Chloe.NBAClient.Contracts;
 using Chloe.Services;
 using Chloe.Services.Contracts;
 using Microsoft.Practices.Unity;
@@ -17,7 +19,8 @@ namespace Chloe.Api
             container.RegisterType<IDbContext, ChloeContext>();
             container.RegisterType<IChloeUow, ChloeUow>();
             container.RegisterType<IRepositoryProvider, RepositoryProvider>();
-            container.RegisterType<IBookService, BookService>();
+            container.RegisterType<IChloeService, ChloeService>();
+            container.RegisterType<INBAClient, NBAClient.NBAClient>();
             
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }

@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -141,7 +142,7 @@
   <ItemGroup>
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\BookController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -156,13 +157,29 @@
       <Project>{e76fbeae-2d8c-42d0-b6af-814905f9d879}</Project>
       <Name>Chloe.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Chloe.Dtos\Chloe.Dtos.csproj">
+      <Project>{1c5acffd-492b-489b-8260-6786e08d3658}</Project>
+      <Name>Chloe.Dtos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chloe.Http\Chloe.Http.csproj">
+      <Project>{450528eb-3057-4f75-8814-170666df23f0}</Project>
+      <Name>Chloe.Http</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Chloe.Models\Chloe.Models.csproj">
       <Project>{4ccc84f8-1b8c-44c1-b8f1-049e94399901}</Project>
       <Name>Chloe.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Chloe.NBAClient\Chloe.NBAClient.csproj">
+      <Project>{3c37e3a6-c687-4373-b3a4-cdc95699fc22}</Project>
+      <Name>Chloe.NBAClient</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Chloe.Services\Chloe.Services.csproj">
       <Project>{b23c457f-a981-465d-885c-46030306a88a}</Project>
       <Name>Chloe.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chloe.ViewModels.AllPlayers\Chloe.ViewModels.AllPlayers.csproj">
+      <Project>{d47a3cbc-cc8d-4942-9c91-04b39318e8b3}</Project>
+      <Name>Chloe.ViewModels.AllPlayers</Name>
     </ProjectReference>
     <ProjectReference Include="..\Chloe.ViewModels\Chloe.ViewModels.csproj">
       <Project>{d48d57ef-e323-4aa8-902d-dcad5a510776}</Project>

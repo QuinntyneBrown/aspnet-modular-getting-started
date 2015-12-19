@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Chloe.Services.Contracts
 {
-    public interface IBookService
+    public interface IChloeService
     {
-        Page GetPageViewModel();
+        Home GetHomePageViewModel();
     }
 }

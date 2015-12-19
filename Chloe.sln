@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Api", "Chloe.Api\Chloe.Api.csproj", "{E8D75765-5CD0-403A-9C27-288AEA6E855B}"
 EndProject
@@ -16,6 +16,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewModels", "Chloe.ViewModels\Chloe.ViewModels.csproj", "{D48D57EF-E323-4AA8-902D-DCAD5A510776}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Configuration", "Chloe.Configuration\Chloe.Configuration.csproj", "{C2FE0E50-887A-434A-A3EB-76F15F0506D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewModels.AllPlayers", "Chloe.ViewModels.AllPlayers\Chloe.ViewModels.AllPlayers.csproj", "{D47A3CBC-CC8D-4942-9C91-04B39318E8B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Http", "Chloe.Http\Chloe.Http.csproj", "{450528EB-3057-4F75-8814-170666DF23F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.NBAClient", "Chloe.NBAClient\Chloe.NBAClient.csproj", "{3C37E3A6-C687-4373-B3A4-CDC95699FC22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Dtos", "Chloe.Dtos\Chloe.Dtos.csproj", "{1C5ACFFD-492B-489B-8260-6786E08D3658}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +59,22 @@ Global
 		{C2FE0E50-887A-434A-A3EB-76F15F0506D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2FE0E50-887A-434A-A3EB-76F15F0506D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2FE0E50-887A-434A-A3EB-76F15F0506D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47A3CBC-CC8D-4942-9C91-04B39318E8B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47A3CBC-CC8D-4942-9C91-04B39318E8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47A3CBC-CC8D-4942-9C91-04B39318E8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47A3CBC-CC8D-4942-9C91-04B39318E8B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450528EB-3057-4F75-8814-170666DF23F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450528EB-3057-4F75-8814-170666DF23F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450528EB-3057-4F75-8814-170666DF23F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450528EB-3057-4F75-8814-170666DF23F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C37E3A6-C687-4373-B3A4-CDC95699FC22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C37E3A6-C687-4373-B3A4-CDC95699FC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C37E3A6-C687-4373-B3A4-CDC95699FC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C37E3A6-C687-4373-B3A4-CDC95699FC22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C5ACFFD-492B-489B-8260-6786E08D3658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5ACFFD-492B-489B-8260-6786E08D3658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5ACFFD-492B-489B-8260-6786E08D3658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5ACFFD-492B-489B-8260-6786E08D3658}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
