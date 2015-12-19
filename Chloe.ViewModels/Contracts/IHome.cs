@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chloe.Dtos
+namespace Chloe.ViewModels.Contracts
 {
-    public class AllPlayersResponseDto
+    public interface IHome: IPage
     {
-        public string Resource { get; set; }
     }
 }

@@ -1,24 +1,18 @@
 ﻿using Chloe.NBAClient.Contracts;
-using Chloe.ViewModels.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Chloe.ViewModels.AllPlayers.Contracts;
 
 namespace Chloe.ViewModels.AllPlayers
 {
-    [Serializable]
-    public class AllPlayers : IComponent
+    public class AllPlayers :  IAllPlayers
     {
         public AllPlayers(INBAClient client)
         {
             this.client = client;
         }
 
-        public dynamic Initialize()
+        public void Initialize()
         {
-            return client.GetAllPlayers();
+            var allPlayers = client.GetAllPlayers();
         }
 
         public string Title { get; set; }

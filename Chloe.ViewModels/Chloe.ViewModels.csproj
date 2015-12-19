@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IComponent.cs" />
+    <Compile Include="Contracts\IHome.cs" />
+    <Compile Include="Contracts\IPage.cs" />
     <Compile Include="Home.cs" />
     <Compile Include="Page.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

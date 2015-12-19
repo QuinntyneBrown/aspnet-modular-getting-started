@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chloe.Dtos
 {
-    public class AllPlayersResponseDto
+    public class ResultSetDto
     {
-        public string Resource { get; set; }
     }
 }

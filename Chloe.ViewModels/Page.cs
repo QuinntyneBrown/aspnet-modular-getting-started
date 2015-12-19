@@ -3,15 +3,23 @@ using System.Collections.Generic;
 
 namespace Chloe.ViewModels
 {
-    public class Page
+    public abstract class Page: IPage
     {
         public Page()
         {
-            this.Components = new HashSet<dynamic>();
+            this.Components = new HashSet<IComponent>();
         }
 
         public string Title { get; set; }
 
-        public ICollection<dynamic> Components { get; set; }
+        public ICollection<IComponent> Components { get; set; }
+
+        public virtual void Initialize()
+        {
+            foreach(var component in this.Components)
+            {
+                component.Initialize();
+            }
+        }
     }
 }

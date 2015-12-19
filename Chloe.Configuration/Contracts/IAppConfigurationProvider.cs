@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chloe.Dtos
+namespace Chloe.Configuration.Contracts
 {
-    public class AllPlayersResponseDto
+    public interface IAppConfigurationProvider
     {
-        public string Resource { get; set; }
+        IAppConfiguration GetAppConfiguration();
     }
 }

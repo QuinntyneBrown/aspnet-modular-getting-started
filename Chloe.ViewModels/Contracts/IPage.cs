@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Chloe.ViewModels.Contracts
 {
-    public interface IComponent
+    public interface IPage
     {
+        ICollection<IComponent> Components { get; set; }
+
         void Initialize();
     }
 }

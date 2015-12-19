@@ -10,11 +10,11 @@ namespace Chloe.Configuration
 {
     public class AppConfiguration : ConfigurationSection, IAppConfiguration
     {
-        [ConfigurationProperty("useExcelDataSource", IsRequired = true)]
-        public bool UseExcelDataSource
+        [ConfigurationProperty("baseUri", IsRequired = true)]
+        public string BaseUri
         {
-            get { return (bool)this["useExcelDataSource"]; }
-            set { this["useExcelDataSource"] = value; }
+            get { return (string)this["baseUri"]; }
+            set { this["baseUri"] = value; }
         }
     }
 }

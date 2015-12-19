@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfiguration.cs" />
+    <Compile Include="AppConfigurationProvider.cs" />
     <Compile Include="Contracts\IAppConfiguration.cs" />
+    <Compile Include="Contracts\IAppConfigurationProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

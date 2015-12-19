@@ -8,5 +8,6 @@ namespace Chloe.Configuration.Contracts
 {
     public interface IAppConfiguration
     {
+        string BaseUri { get; set; }
     }
 }
