@@ -18,7 +18,7 @@ namespace Chloe.Api.Controllers
         [HttpGet]
         public IHttpActionResult Get()
         {
-            return Ok(chloeService.GetHomePageViewModel());
+            return Ok();
         }
 
         protected readonly IChloeService chloeService;

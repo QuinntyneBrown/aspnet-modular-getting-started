@@ -7,17 +7,17 @@ namespace Chloe.Metal
 {
     public class RouteParamsProvider : IRouteParamsProvider
     {
-        public Dictionary<string, string> Get()
+        public Dictionary<string, object> Get()
         {
             return (HttpContext.Current.Items["RouteParams"] ??
                 (HttpContext.Current.Items["RouteParams"] =
-                new Dictionary<string, string>())) as Dictionary<string, string>;
+                new Dictionary<string, object>())) as Dictionary<string, object>;
         }
 
-        public void Set(string key, string value)
+        public void Set(string key, object value)
         {
             var routeParams = Get();
-            routeParams.Add(key, value);
+            routeParams[key] = value;
             HttpContext.Current.Items["RouteParams"] = routeParams;
         }
     }

@@ -2,7 +2,7 @@
 
 namespace Chloe.ViewModels.Contracts
 {
-    public interface IPage
+    public interface IPageViewModel
     {
         ICollection<IComponent> Components { get; set; }
 

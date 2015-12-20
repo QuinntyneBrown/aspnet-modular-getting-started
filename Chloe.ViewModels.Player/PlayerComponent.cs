@@ -22,6 +22,6 @@ namespace Chloe.ViewModels.PlayerComponent
 
         protected readonly INBAClient client;
 
-        protected readonly Dictionary<string, string> routeParams;
+        protected readonly Dictionary<string, object> routeParams;
     }
 }

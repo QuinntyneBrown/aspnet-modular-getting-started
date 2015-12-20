@@ -12,6 +12,8 @@ using Chloe.ViewModels;
 using Chloe.ViewModels.AllPlayers;
 using Chloe.ViewModels.AllPlayers.Contracts;
 using Chloe.ViewModels.Contracts;
+using Chloe.ViewModels.PlayerComponent;
+using Chloe.ViewModels.PlayerComponent.Contracts;
 using Microsoft.Practices.Unity;
 using System.Web.Http;
 using Unity.WebApi;
@@ -28,11 +30,11 @@ namespace Chloe.Api
             container.RegisterType<IRepositoryProvider, RepositoryProvider>();
             container.RegisterType<IChloeService, ChloeService>();
             container.RegisterType<INBAClient, NBAClient.NBAClient>();
-            container.RegisterType<IHome, Home>();
-            container.RegisterType<IAllPlayers, AllPlayers>();
+            container.RegisterType<IPlayersComponent, PlayersComponent>();
             container.RegisterType<IAppConfiguration, AppConfiguration>();
             container.RegisterType<IAppConfigurationProvider, AppConfigurationProvider>();
             container.RegisterType<IRouteParamsProvider, RouteParamsProvider>();
+            container.RegisterType<IPlayerComponent, PlayerComponent>();
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

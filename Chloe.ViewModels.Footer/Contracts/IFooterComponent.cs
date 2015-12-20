@@ -5,13 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chloe.ViewModels
+namespace Chloe.ViewModels.FooterComponent.Contracts
 {
-    public class Player: Page, IPlayer
+    public interface IFooterComponent: IComponent
     {
-        public Player()
-        {
-
-        }
     }
 }

@@ -4,9 +4,9 @@ using System.Net.Http;
 
 namespace Chloe.ViewModels
 {
-    public abstract class Page: IPage
+    public class PageViewModel: IPageViewModel
     {
-        public Page()
+        public PageViewModel()
         {
             this.Components = new HashSet<IComponent>();
         }

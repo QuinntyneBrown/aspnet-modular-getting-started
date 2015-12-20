@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
+using Chloe.Metal.Extensions;
 
 namespace Chloe.App
 {
@@ -9,11 +10,23 @@ namespace Chloe.App
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action ="Index", id = UrlParameter.Optional }
+            routes.Map(
+                name: "Player",
+                url: "player/{playerName}",
+                defaults: new { controller = "Default", action = "Index" }
             );
+
+            routes.Map(
+                name: "Players",
+                url: "players",
+                defaults: new { controller = "Default", action = "Index" }
+            );
+
+            routes.Map(
+                name: "Default",
+                url: "{*catch-all}",
+                defaults: new { controller = "Default", action ="Index" }
+            );           
         }
     }
 }

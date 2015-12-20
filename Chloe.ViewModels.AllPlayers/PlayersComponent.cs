@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace Chloe.ViewModels.AllPlayers
 {
-    public class AllPlayers :  IAllPlayers
+    public class PlayersComponent :  IPlayersComponent
     {
-        public AllPlayers(INBAClient client)
+        public PlayersComponent(INBAClient client)
         {
             this.client = client;
         }

@@ -7,7 +7,6 @@ namespace Chloe.Services.Contracts
 {
     public interface IChloeService
     {
-        IHome GetHomePageViewModel();
-        IPlayer GetPlayerPageViewModel();
+        IPageViewModel GetPageViewModel();
     }
 }

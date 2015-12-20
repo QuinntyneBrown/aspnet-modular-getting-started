@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chloe.ViewModels.AllPlayers.Contracts
+namespace Chloe.ViewModels.Header.Contracts
 {
-    public interface IAllPlayers: IComponent
+    public interface IHeaderComponent: IComponent
     {
-
     }
 }

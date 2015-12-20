@@ -5,14 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chloe.ViewModels
+namespace Chloe.ViewModels.AllPlayers.Contracts
 {
-    public class Home: Page, IHome
+    public interface IPlayersComponent: IComponent
     {
-        public Home()
-        {
-
-        }
 
     }
 }

@@ -8,8 +8,8 @@ namespace Chloe.Metal.Contracts
 {
     public interface IRouteParamsProvider
     {
-        Dictionary<string, string> Get();
+        Dictionary<string, object> Get();
 
-        void Set(string key, string value);
+        void Set(string key, object value);
     }
 }
