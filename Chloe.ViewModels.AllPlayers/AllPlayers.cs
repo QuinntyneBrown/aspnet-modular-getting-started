@@ -1,5 +1,6 @@
 ﻿using Chloe.NBAClient.Contracts;
 using Chloe.ViewModels.AllPlayers.Contracts;
+using System.Collections.Generic;
 
 namespace Chloe.ViewModels.AllPlayers
 {
@@ -10,7 +11,7 @@ namespace Chloe.ViewModels.AllPlayers
             this.client = client;
         }
 
-        public void Initialize()
+        public void Initialize(Dictionary<string,string> routeParams)
         {
             var allPlayers = client.GetAllPlayers();
         }

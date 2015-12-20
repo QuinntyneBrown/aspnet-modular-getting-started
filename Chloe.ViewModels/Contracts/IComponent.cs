@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Chloe.ViewModels.Contracts
 {
     public interface IComponent
     {
-        void Initialize();
+        void Initialize(Dictionary<string,string> routeParams = null);
     }
 }

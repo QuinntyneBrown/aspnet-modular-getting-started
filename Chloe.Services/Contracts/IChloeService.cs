@@ -1,15 +1,12 @@
-﻿using Chloe.ViewModels;
-using Chloe.ViewModels.Contracts;
-using System;
+﻿using Chloe.ViewModels.Contracts;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Http;
+using System.Web;
 
 namespace Chloe.Services.Contracts
 {
     public interface IChloeService
     {
-        IHome GetHomePageViewModel();
+        IHome GetHomePageViewModel(Dictionary<string,string> routeParams = null);
     }
 }

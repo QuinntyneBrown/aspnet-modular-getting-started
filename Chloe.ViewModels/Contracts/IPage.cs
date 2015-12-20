@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Chloe.ViewModels.Contracts
 {
@@ -10,6 +6,6 @@ namespace Chloe.ViewModels.Contracts
     {
         ICollection<IComponent> Components { get; set; }
 
-        void Initialize();
+        void Initialize(Dictionary<string,string> routeParams);
     }
 }
