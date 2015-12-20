@@ -29,11 +29,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewModels.Header", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewModels.Team", "Chloe.ViewModels.Team\Chloe.ViewModels.Team.csproj", "{5ACBC5D7-F9F3-4B6C-B4C2-EE1759AD7A9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewModels.Player", "Chloe.ViewModels.Player\Chloe.ViewModels.Player.csproj", "{03AD1190-715A-4E52-A936-46FA243CB90E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewModels.PlayerComponent", "Chloe.ViewModels.Player\Chloe.ViewModels.PlayerComponent.csproj", "{03AD1190-715A-4E52-A936-46FA243CB90E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewModels.Footer", "Chloe.ViewModels.Footer\Chloe.ViewModels.Footer.csproj", "{D3ACC172-4DDD-4F60-B9C6-F188319DB10E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.SPA", "Chloe.SPA\Chloe.SPA.csproj", "{2598834B-E920-4EF0-9FA3-5806F03FB3A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Metal", "Chloe.Metal\Chloe.Metal.csproj", "{D7CB5497-59ED-4E18-B658-CE12A1C23800}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{2598834B-E920-4EF0-9FA3-5806F03FB3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2598834B-E920-4EF0-9FA3-5806F03FB3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2598834B-E920-4EF0-9FA3-5806F03FB3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CB5497-59ED-4E18-B658-CE12A1C23800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CB5497-59ED-4E18-B658-CE12A1C23800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CB5497-59ED-4E18-B658-CE12A1C23800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CB5497-59ED-4E18-B658-CE12A1C23800}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

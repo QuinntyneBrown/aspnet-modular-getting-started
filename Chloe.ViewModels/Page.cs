@@ -15,11 +15,11 @@ namespace Chloe.ViewModels
 
         public ICollection<IComponent> Components { get; set; }
 
-        public virtual void Initialize(Dictionary<string,string> routeParams)
+        public virtual void Initialize()
         {
             foreach(var component in this.Components)
             {
-                component.Initialize(routeParams);
+                component.Initialize();
             }
         }
     }

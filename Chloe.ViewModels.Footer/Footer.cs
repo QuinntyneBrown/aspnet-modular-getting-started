@@ -6,7 +6,7 @@ namespace Chloe.ViewModels.Footer
 {
     public class Footer : IComponent
     {
-        public void Initialize(Dictionary<string, string> routeParams = null)
+        public void Initialize()
         {
             throw new NotImplementedException();
         }

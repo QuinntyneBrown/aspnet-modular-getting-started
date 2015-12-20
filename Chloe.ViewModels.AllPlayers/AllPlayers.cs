@@ -11,7 +11,7 @@ namespace Chloe.ViewModels.AllPlayers
             this.client = client;
         }
 
-        public void Initialize(Dictionary<string,string> routeParams)
+        public void Initialize()
         {
             var allPlayers = client.GetAllPlayers();
         }
@@ -19,5 +19,6 @@ namespace Chloe.ViewModels.AllPlayers
         public string Title { get; set; }
 
         protected readonly INBAClient client;
+ 
     }
 }

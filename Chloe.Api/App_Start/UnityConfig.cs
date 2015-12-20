@@ -2,6 +2,8 @@ using Chloe.Configuration;
 using Chloe.Configuration.Contracts;
 using Chloe.Data;
 using Chloe.Data.Contracts;
+using Chloe.Metal;
+using Chloe.Metal.Contracts;
 using Chloe.NBAClient;
 using Chloe.NBAClient.Contracts;
 using Chloe.Services;
@@ -30,6 +32,7 @@ namespace Chloe.Api
             container.RegisterType<IAllPlayers, AllPlayers>();
             container.RegisterType<IAppConfiguration, AppConfiguration>();
             container.RegisterType<IAppConfigurationProvider, AppConfigurationProvider>();
+            container.RegisterType<IRouteParamsProvider, RouteParamsProvider>();
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

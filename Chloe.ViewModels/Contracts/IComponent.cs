@@ -4,6 +4,6 @@ namespace Chloe.ViewModels.Contracts
 {
     public interface IComponent
     {
-        void Initialize(Dictionary<string,string> routeParams = null);
+        void Initialize();
     }
 }

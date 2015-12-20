@@ -6,7 +6,7 @@ namespace Chloe.ViewModels.Header
 {
     public class Header : IComponent
     {
-        public void Initialize(Dictionary<string, string> routeParams)
+        public void Initialize()
         {
             throw new NotImplementedException();
         }

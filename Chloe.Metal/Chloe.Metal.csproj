@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{03AD1190-715A-4E52-A936-46FA243CB90E}</ProjectGuid>
+    <ProjectGuid>{D7CB5497-59ED-4E18-B658-CE12A1C23800}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Chloe.ViewModels.Player</RootNamespace>
-    <AssemblyName>Chloe.ViewModels.Player</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>Chloe.Metal</RootNamespace>
+    <AssemblyName>Chloe.Metal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,18 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Player.cs" />
+    <Compile Include="Contracts\IRouteParamsProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Chloe.NBAClient\Chloe.NBAClient.csproj">
-      <Project>{3c37e3a6-c687-4373-b3a4-cdc95699fc22}</Project>
-      <Name>Chloe.NBAClient</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels\Chloe.ViewModels.csproj">
-      <Project>{d48d57ef-e323-4aa8-902d-dcad5a510776}</Project>
-      <Name>Chloe.ViewModels</Name>
-    </ProjectReference>
+    <Compile Include="RouteParamsProvider.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

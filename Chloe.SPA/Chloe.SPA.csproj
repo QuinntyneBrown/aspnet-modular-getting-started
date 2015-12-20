@@ -124,6 +124,7 @@
     <Content Include="wwwroot\components\player.component.js">
       <DependentUpon>player.component.ts</DependentUpon>
     </Content>
+    <Content Include="tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

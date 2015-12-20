@@ -6,6 +6,6 @@ namespace Chloe.ViewModels.Contracts
     {
         ICollection<IComponent> Components { get; set; }
 
-        void Initialize(Dictionary<string,string> routeParams);
+        void Initialize();
     }
 }
