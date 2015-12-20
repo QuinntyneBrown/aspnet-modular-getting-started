@@ -82,13 +82,69 @@
     <Content Include="lib\system.js" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
+    <Content Include="wwwroot\components\all-players.component.css">
+      <DependentUpon>all-players.component.html</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\all-players.component.html" />
+    <Content Include="wwwroot\components\all-players.component.js">
+      <DependentUpon>all-players.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\app-header.component.css">
+      <DependentUpon>app-header.component.html</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\app-header.component.html" />
+    <Content Include="wwwroot\components\app-header.component.js">
+      <DependentUpon>app-header.component.ts</DependentUpon>
+    </Content>
     <Content Include="wwwroot\components\app.component.html" />
+    <Content Include="wwwroot\components\app.component.js">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\footer.component.css">
+      <DependentUpon>footer.component.html</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\footer.component.html" />
+    <Content Include="wwwroot\components\footer.component.js">
+      <DependentUpon>footer.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\footer.component.js.map">
+      <DependentUpon>footer.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\home.component.css">
+      <DependentUpon>home.component.html</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\home.component.html" />
+    <Content Include="wwwroot\components\home.component.js">
+      <DependentUpon>home.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\player.component.css">
+      <DependentUpon>player.component.html</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\player.component.html" />
+    <Content Include="wwwroot\components\player.component.js">
+      <DependentUpon>player.component.ts</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="wwwroot\components\all-players.component.js.map">
+      <DependentUpon>all-players.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\app-header.component.js.map">
+      <DependentUpon>app-header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\app.component.js.map">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\home.component.js.map">
+      <DependentUpon>home.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\components\player.component.js.map">
+      <DependentUpon>player.component.ts</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="gulpfile.js" />
@@ -99,12 +155,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="wwwroot\components\all-players.component.ts" />
-    <TypeScriptCompile Include="wwwroot\components\app-header.component.ts" />
-    <TypeScriptCompile Include="wwwroot\components\app.component.ts" />
-    <TypeScriptCompile Include="wwwroot\components\footer.component.ts" />
-    <TypeScriptCompile Include="wwwroot\components\home.component.ts" />
-    <TypeScriptCompile Include="wwwroot\components\player.component.ts" />
+    <TypeScriptCompile Include="wwwroot\components\all-players.component.ts">
+      <DependentUpon>all-players.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="wwwroot\components\app-header.component.ts">
+      <DependentUpon>app-header.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="wwwroot\components\app.component.ts">
+      <DependentUpon>app.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="wwwroot\components\footer.component.ts">
+      <DependentUpon>footer.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="wwwroot\components\home.component.ts">
+      <DependentUpon>home.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="wwwroot\components\player.component.ts">
+      <DependentUpon>player.component.html</DependentUpon>
+    </TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
