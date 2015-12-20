@@ -9,7 +9,10 @@ namespace Chloe.Data.Contracts
 {
     public interface IChloeUow: IDisposable
     {
-        IRepository<Book> Books { get; }
+        IRepository<Page> Pages { get; }
+
+        IRepository<Component> Components { get; }
+
         void SaveChanges();
     }
 }

@@ -14,7 +14,8 @@ namespace Chloe.Data.Migrations
 
         protected override void Seed(Chloe.Data.ChloeContext context)
         {
-
+            ComponentConfiguration.Seed(context);
+            PageConfiguration.Seed(context);
         }
     }
 }

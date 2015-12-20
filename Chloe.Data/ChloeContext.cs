@@ -14,7 +14,10 @@ namespace Chloe.Data
             Configuration.AutoDetectChangesEnabled = true;
         }
 
-        public DbSet<Book> Books { get; set; }
+        public DbSet<Page> Pages { get; set; }
+
+        public DbSet<Component> Components { get; set; }
+
 
         int IDbContext.SaveChanges()
         {

@@ -8,35 +8,33 @@ using Chloe.ViewModels.HomeComponent.Contracts;
 using Chloe.ViewModels.AllPlayers.Contracts;
 using Chloe.ViewModels.FooterComponent.Contracts;
 using Chloe.ViewModels.Header.Contracts;
+using Chloe.Data.Contracts;
+using System.Linq;
+using System.Data.Entity;
 
 namespace Chloe.Services
 {
     public class ChloeService: IChloeService
     {
-        public ChloeService(IRouteParamsProvider routeParamsProvider)
+        public ChloeService(IChloeUow uow, IRouteParamsProvider routeParamsProvider)
         {
             this.routeParamsProvider = routeParamsProvider;
+            this.uow = uow;
         }
 
         public IPageViewModel GetPageViewModel()
         {
             var pageViewModel = DependencyResolver.Current.GetService<IPageViewModel>();
-            pageViewModel.Components.Add(DependencyResolver.Current.GetService<IHeaderComponent>());
-            pageViewModel.Components.Add(DependencyResolver.Current.GetService<IFooterComponent>());
 
-            switch (this.routeParamsProvider.Get()["routeName"] as string)
+            var components = uow.Pages
+                .GetAll()
+                .Include(x=>x.Components)
+                .Where(x => x.RouteName == routeParamsProvider.Get()["routeName"] as string).First()
+                .Components.ToList();
+
+            foreach(var component in components)
             {
-                case "Default":
-                    pageViewModel.Components.Add(DependencyResolver.Current.GetService<IHomeComponent>());
-                    break;
-
-                case "Player":
-                    pageViewModel.Components.Add(DependencyResolver.Current.GetService<IPlayerComponent>());
-                    break;
-
-                case "Players":
-                    pageViewModel.Components.Add(DependencyResolver.Current.GetService<IPlayersComponent>());
-                    break;
+                pageViewModel.Components.Add(LocateComponent(component.Name));
             }
 
             pageViewModel.Initialize();
@@ -44,7 +42,33 @@ namespace Chloe.Services
             return pageViewModel;
         }
 
+        private IComponent LocateComponent(string componentName)
+        {
+            switch(componentName)
+            {
+                case "homeComponent":
+                    return DependencyResolver.Current.GetService<IHomeComponent>();
+
+                case "playerComponent":
+                    return DependencyResolver.Current.GetService<IPlayerComponent>();
+
+                case "playersComponent":
+                    return DependencyResolver.Current.GetService<IPlayersComponent>();
+
+                case "headerComponent":
+                    return DependencyResolver.Current.GetService<IHeaderComponent>();
+
+                case "footerComponent":
+                    return DependencyResolver.Current.GetService<IFooterComponent>();
+            }
+
+            throw new NotImplementedException();
+        }
+
         protected readonly IRouteParamsProvider routeParamsProvider;
-        
+
+        protected readonly IChloeUow uow;
+
+
     }
 }

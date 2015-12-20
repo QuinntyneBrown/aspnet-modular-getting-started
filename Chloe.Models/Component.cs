@@ -1,8 +1,8 @@
 ﻿namespace Chloe.Models
 {
-    public class Book
+    public class Component
     {
-        public Book()
+        public Component()
         {
 
         }

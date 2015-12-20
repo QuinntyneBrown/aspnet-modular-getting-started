@@ -34,7 +34,9 @@ namespace Chloe.Data
             RepositoryProvider = repositoryProvider;
         }
 
-        public IRepository<Book> Books { get { return GetStandardRepo<Book>(); } }
+        public IRepository<Page> Pages { get { return GetStandardRepo<Page>(); } }
+
+        public IRepository<Component> Components { get { return GetStandardRepo<Component>(); } }
 
         protected void ConfigureDbContext(IDbContext dbContext)
         {
