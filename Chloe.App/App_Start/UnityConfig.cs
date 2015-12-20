@@ -11,10 +11,10 @@ using Chloe.ViewModels.AllPlayers;
 using Chloe.ViewModels.AllPlayers.Contracts;
 using Chloe.ViewModels.Contracts;
 using Microsoft.Practices.Unity;
-using System.Web.Http;
-using Unity.WebApi;
+using System.Web.Mvc;
+using Unity.Mvc5;
 
-namespace Chloe.Api
+namespace Chloe.App
 {
     public static class UnityConfig
     {
@@ -30,7 +30,7 @@ namespace Chloe.Api
             container.RegisterType<IAllPlayers, AllPlayers>();
             container.RegisterType<IAppConfiguration, AppConfiguration>();
             container.RegisterType<IAppConfigurationProvider, AppConfigurationProvider>();
-            GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
+            DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
 }

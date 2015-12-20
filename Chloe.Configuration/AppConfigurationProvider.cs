@@ -1,7 +1,6 @@
 ﻿using Chloe.Configuration.Contracts;
 using System.Configuration;
 
-
 namespace Chloe.Configuration
 {
     public class AppConfigurationProvider : IAppConfigurationProvider
