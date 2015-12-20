@@ -4,15 +4,17 @@
     <meta charset="utf-8" />
     <title>Chloe SPA</title>
     <script src="lib/es6-shim.js"></script>
+    <script src="lib/angular2-polyfills.js"></script>
     <script src="lib/system.js"></script>
     <script>
         System.config({ defaultJSExtensions: true });
     </script>
+    <script src="lib/Rx.js"></script>
     <script src="lib/angular2.dev.js"></script>
     <script src="lib/router.dev.js"></script>
     <script src="lib/http.dev.js"></script>
     <script>
-        System.import('wwwroot/app.component').catch(console.log.bind(console));
+        System.import('wwwroot/components/app.component').catch(console.log.bind(console));
     </script>
 </head>
 <body>

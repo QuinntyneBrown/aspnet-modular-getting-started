@@ -71,8 +71,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="lib\angular2-polyfills.js" />
+    <Content Include="lib\angular2.dev.js" />
+    <Content Include="lib\es6-shim.js" />
+    <Content Include="lib\http.dev.js" />
+    <Content Include="lib\http.js" />
+    <Content Include="lib\router.dev.js" />
+    <Content Include="lib\Rx.js" />
+    <Content Include="lib\system-polyfills.js" />
+    <Content Include="lib\system.js" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
+    <Content Include="wwwroot\components\app.component.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -81,7 +91,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="gulpfile.config.js" />
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
@@ -93,15 +102,14 @@
     <TypeScriptCompile Include="wwwroot\components\all-players.component.ts" />
     <TypeScriptCompile Include="wwwroot\components\app-header.component.ts" />
     <TypeScriptCompile Include="wwwroot\components\app.component.ts" />
+    <TypeScriptCompile Include="wwwroot\components\footer.component.ts" />
     <TypeScriptCompile Include="wwwroot\components\home.component.ts" />
     <TypeScriptCompile Include="wwwroot\components\player.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="lib\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
