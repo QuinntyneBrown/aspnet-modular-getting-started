@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chloe.ViewComponents
+namespace Chloe.ViewModels
 {
     public enum ComponentType
     {

@@ -11,7 +11,7 @@ using Chloe.Services.Contracts;
 using Chloe.ViewComponents;
 using Chloe.ViewComponents.Players;
 using Chloe.ViewComponents.Players.Contracts;
-using Chloe.ViewComponents.Contracts;
+using Chloe.ViewModels.Contracts;
 using Chloe.ViewComponents.PlayerComponent;
 using Chloe.ViewComponents.PlayerComponent.Contracts;
 using Chloe.ViewComponents.PlayersComponent;

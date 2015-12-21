@@ -1,5 +1,7 @@
 ﻿using Chloe.ViewComponents.FooterComponent.Contracts;
+using Chloe.ViewModels;
 using System;
+
 
 namespace Chloe.ViewComponents.FooterComponent
 {

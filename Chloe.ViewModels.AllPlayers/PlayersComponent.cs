@@ -1,5 +1,6 @@
 ﻿using Chloe.NBAClient.Contracts;
 using Chloe.ViewComponents.Players.Contracts;
+using Chloe.ViewModels;
 
 namespace Chloe.ViewComponents.PlayersComponent
 {

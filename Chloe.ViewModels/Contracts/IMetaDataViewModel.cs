@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chloe.ViewComponents.Contracts
+namespace Chloe.ViewModels.Contracts
 {
     public interface IMetaDataViewModel
     {

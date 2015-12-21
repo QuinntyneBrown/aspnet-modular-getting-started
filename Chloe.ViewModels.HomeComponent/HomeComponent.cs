@@ -1,5 +1,6 @@
 ﻿using Chloe.ViewComponents.HomeComponent.Contracts;
 using System;
+using Chloe.ViewModels;
 
 namespace Chloe.ViewComponents.HomeComponent
 {

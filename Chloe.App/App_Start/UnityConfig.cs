@@ -11,7 +11,7 @@ using Chloe.Services.Contracts;
 using Chloe.ViewComponents;
 using Chloe.ViewComponents.Players;
 using Chloe.ViewComponents.Players.Contracts;
-using Chloe.ViewComponents.Contracts;
+using Chloe.ViewModels.Contracts;
 using Chloe.ViewComponents.FooterComponent;
 using Chloe.ViewComponents.FooterComponent.Contracts;
 using Chloe.ViewComponents.Header.Contracts;
@@ -24,6 +24,7 @@ using Chloe.ViewComponents.PlayersComponent;
 using Microsoft.Practices.Unity;
 using System.Web.Mvc;
 using Unity.Mvc5;
+using Chloe.ViewModels;
 
 namespace Chloe.App
 {

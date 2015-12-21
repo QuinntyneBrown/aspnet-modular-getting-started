@@ -1,4 +1,4 @@
-﻿using Chloe.ViewComponents.Contracts;
+﻿using Chloe.ViewModels.Contracts;
 
 namespace Chloe.ViewComponents.HomeComponent.Contracts
 {

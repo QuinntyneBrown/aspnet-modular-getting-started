@@ -1,9 +1,10 @@
 ﻿using Chloe.Metal.Contracts;
 using Chloe.NBAClient.Contracts;
-using Chloe.ViewComponents.Contracts;
+using Chloe.ViewModels.Contracts;
 using Chloe.ViewComponents.PlayerComponent.Contracts;
 using System;
 using System.Collections.Generic;
+using Chloe.ViewModels;
 
 namespace Chloe.ViewComponents.PlayerComponent
 {

@@ -1,4 +1,5 @@
 ﻿using Chloe.ViewComponents.Header.Contracts;
+using Chloe.ViewModels;
 using System;
 
 namespace Chloe.ViewComponents.HeaderComponent

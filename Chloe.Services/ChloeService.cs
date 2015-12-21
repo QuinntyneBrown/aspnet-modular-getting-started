@@ -1,6 +1,6 @@
 ﻿using System;
 using Chloe.Services.Contracts;
-using Chloe.ViewComponents.Contracts;
+using Chloe.ViewModels.Contracts;
 using Chloe.Metal.Contracts;
 using System.Web.Mvc;
 using Chloe.ViewComponents.PlayerComponent.Contracts;

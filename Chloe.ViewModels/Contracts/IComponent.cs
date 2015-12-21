@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Chloe.ViewComponents.Contracts
+namespace Chloe.ViewModels.Contracts
 {
     public interface IComponent
     {
