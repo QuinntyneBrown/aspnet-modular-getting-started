@@ -10,5 +10,7 @@ namespace Chloe.NBAClient.Contracts
     public interface INBAClient
     {
         AllPlayersResponseDto GetAllPlayers();
+
+        Task<AllPlayersResponseDto> GetAllPlayersAsync();
     }
 }

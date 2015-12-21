@@ -7,5 +7,7 @@ namespace Chloe.ViewModels.Contracts
         ICollection<IComponent> Components { get; set; }
 
         void Initialize();
+
+        IComponent GetComponentByName(string name);
     }
 }

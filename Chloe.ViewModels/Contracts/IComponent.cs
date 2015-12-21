@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Chloe.ViewModels.Contracts
 {
@@ -9,5 +10,9 @@ namespace Chloe.ViewModels.Contracts
         ComponentType ComponentType { get; set; }
 
         string ViewName { get; set; }
+
+        string ViewLocation { get; }
+
+        Task InvokeAsync();
     }
 }

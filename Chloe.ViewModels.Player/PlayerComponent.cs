@@ -5,6 +5,7 @@ using Chloe.ViewComponents.PlayerComponent.Contracts;
 using System;
 using System.Collections.Generic;
 using Chloe.ViewModels;
+using System.Threading.Tasks;
 
 namespace Chloe.ViewComponents.PlayerComponent
 {
@@ -14,17 +15,25 @@ namespace Chloe.ViewComponents.PlayerComponent
         {
             this.client = client;
             this.ComponentType = ComponentType.Player;
-            this.ViewName = "_Player";
+            this.ViewName = "Player";
         }
 
         public void Initialize()
         {
 
         }
+
+        public Task InvokeAsync()
+        {
+            return Task.Factory.StartNew<int>(() => {return 1; });
+        }
+
         public ComponentType ComponentType { get; set; }
 
         public string ViewName { get; set; }
 
         protected readonly INBAClient client;
+
+        public string ViewLocation { get { return string.Format("Components/_{0}", this.ViewName); } }
     }
 }

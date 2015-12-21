@@ -2,7 +2,7 @@
 using System.Web.Routing;
 using Chloe.Metal.Extensions;
 
-namespace Chloe.App
+namespace Chloe.Web
 {
     public class RouteConfig
     {

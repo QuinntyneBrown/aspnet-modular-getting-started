@@ -1,6 +1,8 @@
 ﻿using Chloe.ViewModels.Contracts;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Chloe.ViewModels
 {
@@ -17,10 +19,19 @@ namespace Chloe.ViewModels
 
         public virtual void Initialize()
         {
+            List<Task> tasks = new List<Task>();
+
             foreach(var component in this.Components)
             {
-                component.Initialize();
+                tasks.Add(component.InvokeAsync());
             }
+
+            Task.WaitAll(tasks.ToArray());
+        }
+
+        public IComponent GetComponentByName(string name)
+        {
+            return this.Components.Single(x => x.ViewName == name);
         }
     }
 }

@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Chloe.App</RootNamespace>
-    <AssemblyName>Chloe.App</AssemblyName>
+    <RootNamespace>Chloe.Web</RootNamespace>
+    <AssemblyName>Chloe.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -136,14 +136,15 @@
     <Content Include="packages.config" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\_Header.cshtml" />
-    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\Components\_Header.cshtml" />
+    <Content Include="Views\Shared\Components\_Footer.cshtml" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\Shared\_Player.cshtml" />
-    <Content Include="Views\Shared\_Players.cshtml" />
-    <Content Include="Views\Shared\_Home.cshtml" />
+    <Content Include="Views\Shared\Components\_Player.cshtml" />
+    <Content Include="Views\Shared\Components\_Players.cshtml" />
+    <Content Include="Views\Shared\Components\_Home.cshtml" />
+    <Content Include="wwwroot\css\site.css" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -2,7 +2,7 @@
 using Chloe.Services.Contracts;
 using System.Web.Mvc;
 
-namespace Chloe.App.Controllers
+namespace Chloe.Web.Controllers
 {
     public class DefaultController : BaseController
     {

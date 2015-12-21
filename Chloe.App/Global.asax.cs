@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.Routing;
 
-namespace Chloe.App
+namespace Chloe.Web
 {
     public class Global : System.Web.HttpApplication
     {

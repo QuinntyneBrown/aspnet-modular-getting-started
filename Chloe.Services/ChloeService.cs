@@ -7,10 +7,12 @@ using Chloe.ViewComponents.PlayerComponent.Contracts;
 using Chloe.ViewComponents.HomeComponent.Contracts;
 using Chloe.ViewComponents.Players.Contracts;
 using Chloe.ViewComponents.FooterComponent.Contracts;
-using Chloe.ViewComponents.Header.Contracts;
 using Chloe.Data.Contracts;
 using System.Linq;
 using System.Data.Entity;
+using Chloe.ViewComponents.HeaderComponent.Contracts;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Chloe.Services
 {
@@ -31,6 +33,7 @@ namespace Chloe.Services
                 .Include(x=>x.Components)
                 .Where(x => x.RouteName == routeName).First()
                 .Components.ToList();
+            
 
             foreach(var component in components)
             {
