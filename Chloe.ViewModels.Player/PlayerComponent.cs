@@ -17,7 +17,7 @@ namespace Chloe.ViewModels.PlayerComponent
 
         public void Initialize()
         {
-            throw new NotImplementedException();
+
         }
 
         protected readonly INBAClient client;

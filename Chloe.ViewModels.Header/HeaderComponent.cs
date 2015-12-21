@@ -12,7 +12,7 @@ namespace Chloe.ViewModels.HeaderComponent
 
         public void Initialize()
         {
-            throw new NotImplementedException();
+
         }
     }
 }

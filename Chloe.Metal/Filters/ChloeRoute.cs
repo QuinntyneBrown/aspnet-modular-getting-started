@@ -1,8 +1,4 @@
 ﻿using Chloe.Metal.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Chloe.Metal.Extensions;
 
@@ -15,7 +11,7 @@ namespace Chloe.Metal.Filter
             this.routeParamsProvider = DependencyResolver.Current.GetService<IRouteParamsProvider>();
         }
 
-        public override void OnActionExecuted(ActionExecutedContext filterContext)
+        public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             this.routeParamsProvider.Set("routeName", filterContext.RouteData.GetRouteName());
 
@@ -23,7 +19,7 @@ namespace Chloe.Metal.Filter
             {
                 this.routeParamsProvider.Set(item.Key, item.Value);
             }
-            base.OnActionExecuted(filterContext);
+            base.OnActionExecuting(filterContext);
         }
 
         protected readonly IRouteParamsProvider routeParamsProvider;

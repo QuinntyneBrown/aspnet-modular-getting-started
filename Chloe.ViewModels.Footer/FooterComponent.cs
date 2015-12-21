@@ -12,7 +12,7 @@ namespace Chloe.ViewModels.FooterComponent
 
         public void Initialize()
         {
-            throw new NotImplementedException();
+
         }
     }
 }

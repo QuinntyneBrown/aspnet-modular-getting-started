@@ -7,7 +7,7 @@ namespace Chloe.ViewModels.HomeComponent
     {
         public void Initialize()
         {
-            throw new NotImplementedException();
+
         }
     }
 }

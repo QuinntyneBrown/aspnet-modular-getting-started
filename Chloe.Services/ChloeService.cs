@@ -25,11 +25,11 @@ namespace Chloe.Services
         public IPageViewModel GetPageViewModel()
         {
             var pageViewModel = DependencyResolver.Current.GetService<IPageViewModel>();
-
+            var routeName = routeParamsProvider.Get()["routeName"] as string;
             var components = uow.Pages
                 .GetAll()
                 .Include(x=>x.Components)
-                .Where(x => x.RouteName == routeParamsProvider.Get()["routeName"] as string).First()
+                .Where(x => x.RouteName == routeName).First()
                 .Components.ToList();
 
             foreach(var component in components)
