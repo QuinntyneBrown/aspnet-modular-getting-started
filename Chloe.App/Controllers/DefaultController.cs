@@ -1,4 +1,4 @@
-﻿using Chloe.Metal.Filter;
+﻿using Chloe.Metal.Filters;
 using Chloe.Services.Contracts;
 using System.Web.Mvc;
 
@@ -13,6 +13,7 @@ namespace Chloe.App.Controllers
         }
 
         [ChloeRoute]
+        [MetaData]
         public ActionResult Index()
         {           
             return View(chloeService.GetPageViewModel());

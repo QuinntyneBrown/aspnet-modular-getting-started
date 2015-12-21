@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using Chloe.Metal.Extensions;
 
-namespace Chloe.Metal.Filter
+namespace Chloe.Metal.Filters
 {
     public class ChloeRoute : ActionFilterAttribute
     {

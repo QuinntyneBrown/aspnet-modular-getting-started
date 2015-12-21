@@ -45,6 +45,7 @@ namespace Chloe.App
             container.RegisterType<IPlayerComponent, PlayerComponent>();
             container.RegisterType<IHeaderComponent, HeaderComponent>();
             container.RegisterType<IFooterComponent, FooterComponent>();
+            container.RegisterType<IMetaDataViewModel, MetaDataViewModel>();
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }

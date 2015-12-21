@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IComponent.cs" />
+    <Compile Include="Contracts\IMetaDataViewModel.cs" />
     <Compile Include="Contracts\IPageViewModel.cs" />
+    <Compile Include="MetaDataViewModel.cs" />
     <Compile Include="PageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
