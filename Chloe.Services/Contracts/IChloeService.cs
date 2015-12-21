@@ -1,4 +1,4 @@
-﻿using Chloe.ViewModels.Contracts;
+﻿using Chloe.ViewComponents.Contracts;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Web;

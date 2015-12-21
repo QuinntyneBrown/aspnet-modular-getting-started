@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D47A3CBC-CC8D-4942-9C91-04B39318E8B3}</ProjectGuid>
+    <ProjectGuid>{AC14BB19-57F7-4DCB-B313-24FE1FB14069}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Chloe.ViewModels.PlayersComponent</RootNamespace>
-    <AssemblyName>Chloe.ViewModels.PlayersComponent</AssemblyName>
+    <RootNamespace>Chloe.ViewComponents.Header</RootNamespace>
+    <AssemblyName>Chloe.ViewComponents.Header</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -42,22 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PlayersComponent.cs" />
-    <Compile Include="Contracts\IPlayersComponent.cs" />
+    <Compile Include="Contracts\IHeaderComponent.cs" />
+    <Compile Include="HeaderComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Chloe.Dtos\Chloe.Dtos.csproj">
-      <Project>{1c5acffd-492b-489b-8260-6786e08d3658}</Project>
-      <Name>Chloe.Dtos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Chloe.Http\Chloe.Http.csproj">
-      <Project>{450528eb-3057-4f75-8814-170666df23f0}</Project>
-      <Name>Chloe.Http</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Chloe.NBAClient\Chloe.NBAClient.csproj">
-      <Project>{3c37e3a6-c687-4373-b3a4-cdc95699fc22}</Project>
-      <Name>Chloe.NBAClient</Name>
+    <ProjectReference Include="..\Chloe.ViewComponents\Chloe.ViewComponents.csproj">
+      <Project>{229c38a9-a09c-4350-ae9e-0bb39979d072}</Project>
+      <Name>Chloe.ViewComponents</Name>
     </ProjectReference>
     <ProjectReference Include="..\Chloe.ViewModels\Chloe.ViewModels.csproj">
       <Project>{d48d57ef-e323-4aa8-902d-dcad5a510776}</Project>

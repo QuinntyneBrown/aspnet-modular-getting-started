@@ -1,27 +1,29 @@
 ﻿using Chloe.Metal.Contracts;
 using Chloe.NBAClient.Contracts;
-using Chloe.ViewModels.Contracts;
-using Chloe.ViewModels.PlayerComponent.Contracts;
+using Chloe.ViewComponents.Contracts;
+using Chloe.ViewComponents.PlayerComponent.Contracts;
 using System;
 using System.Collections.Generic;
 
-namespace Chloe.ViewModels.PlayerComponent
+namespace Chloe.ViewComponents.PlayerComponent
 {
     public class PlayerComponent : IPlayerComponent
     {
         public PlayerComponent(INBAClient client, IRouteParamsProvider routeParamsProvider)
         {
             this.client = client;
-            this.routeParams = routeParamsProvider.Get();
+            this.ComponentType = ComponentType.Player;
+            this.ViewName = "_Player";
         }
 
         public void Initialize()
         {
 
         }
+        public ComponentType ComponentType { get; set; }
+
+        public string ViewName { get; set; }
 
         protected readonly INBAClient client;
-
-        protected readonly Dictionary<string, object> routeParams;
     }
 }

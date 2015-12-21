@@ -1,4 +1,4 @@
-﻿using Chloe.ViewModels.Contracts;
+﻿using Chloe.ViewComponents.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;

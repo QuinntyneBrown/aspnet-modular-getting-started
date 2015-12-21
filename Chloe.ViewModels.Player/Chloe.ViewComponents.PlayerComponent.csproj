@@ -7,8 +7,8 @@
     <ProjectGuid>{03AD1190-715A-4E52-A936-46FA243CB90E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Chloe.ViewModels.PlayerComponent</RootNamespace>
-    <AssemblyName>Chloe.ViewModels.PlayerComponent</AssemblyName>
+    <RootNamespace>Chloe.ViewComponents.PlayerComponent</RootNamespace>
+    <AssemblyName>Chloe.ViewComponents.PlayerComponent</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -54,6 +54,10 @@
     <ProjectReference Include="..\Chloe.NBAClient\Chloe.NBAClient.csproj">
       <Project>{3c37e3a6-c687-4373-b3a4-cdc95699fc22}</Project>
       <Name>Chloe.NBAClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chloe.ViewComponents\Chloe.ViewComponents.csproj">
+      <Project>{229c38a9-a09c-4350-ae9e-0bb39979d072}</Project>
+      <Name>Chloe.ViewComponents</Name>
     </ProjectReference>
     <ProjectReference Include="..\Chloe.ViewModels\Chloe.ViewModels.csproj">
       <Project>{d48d57ef-e323-4aa8-902d-dcad5a510776}</Project>

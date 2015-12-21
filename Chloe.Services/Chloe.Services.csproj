@@ -101,25 +101,25 @@
       <Project>{3c37e3a6-c687-4373-b3a4-cdc95699fc22}</Project>
       <Name>Chloe.NBAClient</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.AllPlayers\Chloe.ViewModels.PlayersComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewModels.AllPlayers\Chloe.ViewComponents.PlayersComponent.csproj">
       <Project>{d47a3cbc-cc8d-4942-9c91-04b39318e8b3}</Project>
-      <Name>Chloe.ViewModels.PlayersComponent</Name>
+      <Name>Chloe.ViewComponents.PlayersComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.Footer\Chloe.ViewModels.FooterComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewModels.Footer\Chloe.ViewComponents.FooterComponent.csproj">
       <Project>{d3acc172-4ddd-4f60-b9c6-f188319db10e}</Project>
-      <Name>Chloe.ViewModels.FooterComponent</Name>
+      <Name>Chloe.ViewComponents.FooterComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.Header\Chloe.ViewModels.HeaderComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewModels.Header\Chloe.ViewComponents.HeaderComponent.csproj">
       <Project>{ac14bb19-57f7-4dcb-b313-24fe1fb14069}</Project>
-      <Name>Chloe.ViewModels.HeaderComponent</Name>
+      <Name>Chloe.ViewComponents.HeaderComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.HomeComponent\Chloe.ViewModels.HomeComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewModels.HomeComponent\Chloe.ViewComponents.HomeComponent.csproj">
       <Project>{678a1346-c461-4dec-a538-326597233470}</Project>
-      <Name>Chloe.ViewModels.HomeComponent</Name>
+      <Name>Chloe.ViewComponents.HomeComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.Player\Chloe.ViewModels.PlayerComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewModels.Player\Chloe.ViewComponents.PlayerComponent.csproj">
       <Project>{03ad1190-715a-4e52-a936-46fa243cb90e}</Project>
-      <Name>Chloe.ViewModels.PlayerComponent</Name>
+      <Name>Chloe.ViewComponents.PlayerComponent</Name>
     </ProjectReference>
     <ProjectReference Include="..\Chloe.ViewModels\Chloe.ViewModels.csproj">
       <Project>{d48d57ef-e323-4aa8-902d-dcad5a510776}</Project>

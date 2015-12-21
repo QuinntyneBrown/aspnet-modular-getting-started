@@ -1,8 +1,8 @@
-﻿using Chloe.ViewModels.Contracts;
+﻿using Chloe.ViewComponents.Contracts;
 using System.Collections.Generic;
 using System.Net.Http;
 
-namespace Chloe.ViewModels
+namespace Chloe.ViewComponents
 {
     public class PageViewModel: IPageViewModel
     {

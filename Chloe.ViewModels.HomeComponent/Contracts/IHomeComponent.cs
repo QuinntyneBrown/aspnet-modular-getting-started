@@ -1,6 +1,6 @@
-﻿using Chloe.ViewModels.Contracts;
+﻿using Chloe.ViewComponents.Contracts;
 
-namespace Chloe.ViewModels.HomeComponent.Contracts
+namespace Chloe.ViewComponents.HomeComponent.Contracts
 {
     public interface IHomeComponent: IComponent
     {
