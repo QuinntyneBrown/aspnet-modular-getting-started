@@ -19,14 +19,10 @@ namespace Chloe.ViewComponents.FooterComponent
 
         public string ViewName { get; set; }
 
-        public void Initialize()
-        {
-
-        }
-
         public Task InvokeAsync()
-        {            
-            return Task.Factory.StartNew<int>(() => {return 1; });
+        {
+            return Task.Run(() => { return new { }; });
+                    
         }
 
         public string ViewLocation { get { return string.Format("Components/_{0}", this.ViewName); } }

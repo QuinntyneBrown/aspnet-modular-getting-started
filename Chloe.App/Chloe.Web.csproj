@@ -145,6 +145,7 @@
     <Content Include="Views\Shared\Components\_Players.cshtml" />
     <Content Include="Views\Shared\Components\_Home.cshtml" />
     <Content Include="wwwroot\css\site.css" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

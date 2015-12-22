@@ -1,4 +1,6 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@model IPageViewModel
+
+@foreach(var component in Model.GetBodyComponents())
+{
+    @Html.Partial(component.ViewLocation,component)
 }
-<h2>Home</h2>

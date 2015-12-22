@@ -26,15 +26,17 @@ namespace Chloe.NBAClient
             return JsonConvert.DeserializeObject<AllPlayersResponseDto>(json);
         }
 
-        public async Task<AllPlayersResponseDto> GetAllPlayersAsync()
+        public Task<AllPlayersResponseDto> GetAllPlayersAsync()
         {
-            string uri = string.Format(
-                "{0}/stats/commonallplayers?IsOnlyCurrentSeason=1&LeagueID=00&Season=2015-16",
-                this.appConfiguration.BaseUri);
-            HttpClient client = new HttpClient();
-            var result = await client.GetAsync(uri);
-            var json = result.Content.ReadAsStringAsync().Result;
-            return JsonConvert.DeserializeObject<AllPlayersResponseDto>(json);
+            return Task.Run(() =>
+            {
+                string uri = string.Format(
+                    "{0}/stats/commonallplayers?IsOnlyCurrentSeason=1&LeagueID=00&Season=2015-16",
+                    this.appConfiguration.BaseUri);
+                HttpClient client = new HttpClient();
+                Task<HttpResponseMessage> taskHttpResponseMessage = client.GetAsync(uri);
+                return taskHttpResponseMessage.Result.Content.ReadAsAsync<AllPlayersResponseDto>();
+            });            
         }
 
         protected readonly IAppConfiguration appConfiguration;

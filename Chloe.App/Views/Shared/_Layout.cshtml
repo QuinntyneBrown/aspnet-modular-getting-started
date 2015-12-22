@@ -4,14 +4,14 @@
 <html>
     <head>    
         <meta name="viewport" content="width=device-width" />    
-        <title>Chloe MVC App</title>
+        <title>Chloe: ASP.NET MVC</title>
         <link href="~/wwwroot/css/site.css" rel="stylesheet" />
     </head>
     <body>
         <div class="main-content">
             @Html.Partial(Model.GetComponentByName("Header").ViewLocation, Model.GetComponentByName("Header"))
             @RenderBody()
-            @Html.Partial("Components/_Footer")
+            @Html.Partial(Model.GetComponentByName("Footer").ViewLocation, Model.GetComponentByName("Footer"))
         </div>
     </body>
 </html>

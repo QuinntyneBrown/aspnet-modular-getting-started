@@ -17,14 +17,9 @@ namespace Chloe.ViewComponents.HeaderComponent
             this.client = client;
         }
 
-        public void Initialize()
-        {
-
-        }
-
         public Task InvokeAsync()
         {
-            return Task.Factory.StartNew<int>(() => { return 1; });
+            return Task.Run(() => { return new { }; });            
         }
 
         public ICollection<Link> Links { get; set; }

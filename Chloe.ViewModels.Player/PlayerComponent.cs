@@ -18,14 +18,9 @@ namespace Chloe.ViewComponents.PlayerComponent
             this.ViewName = "Player";
         }
 
-        public void Initialize()
-        {
-
-        }
-
         public Task InvokeAsync()
         {
-            return Task.Factory.StartNew<int>(() => {return 1; });
+            return Task.Run(() => { return new { }; });
         }
 
         public ComponentType ComponentType { get; set; }

@@ -33,5 +33,10 @@ namespace Chloe.ViewModels
         {
             return this.Components.Single(x => x.ViewName == name);
         }
+
+        public ICollection<IComponent> GetBodyComponents()
+        {
+            return this.Components.Where(x => x.ViewName != "Header" && x.ViewName != "Footer").ToList();            
+        }
     }
 }

@@ -7,22 +7,23 @@ namespace Chloe.ViewComponents.HomeComponent
 {
     public class HomeComponent : IHomeComponent
     {
-        public void Initialize()
+        public HomeComponent()
         {
             this.ComponentType = ComponentType.Home;
-
             this.ViewName = "Home";
         }
 
         public Task InvokeAsync()
         {
-            return Task.Factory.StartNew<int>(() => {return 1; });
+            return Task.Run(() => { return new { }; });
         }
 
         public ComponentType ComponentType { get; set; }
 
         public string ViewName { get; set; }
 
-        public string ViewLocation { get { return string.Format("Components/_{0}", this.ViewName); } }
+        public string ViewLocation { get {
+                return string.Format("Components/_{0}", this.ViewName);
+            } }
     }
 }

@@ -9,5 +9,7 @@ namespace Chloe.ViewModels.Contracts
         void Initialize();
 
         IComponent GetComponentByName(string name);
+
+        ICollection<IComponent> GetBodyComponents();
     }
 }
