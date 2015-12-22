@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Api", "Chloe.Api\Chloe.Api.csproj", "{E8D75765-5CD0-403A-9C27-288AEA6E855B}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Services", "Chloe.Ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Data", "Chloe.Data\Chloe.Data.csproj", "{E76FBEAE-2D8C-42D0-B6AF-814905F9D879}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Web", "Chloe.App\Chloe.Web.csproj", "{DE525548-D904-47F6-9848-5C4DBC550235}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Web", "Chloe.Web\Chloe.Web.csproj", "{DE525548-D904-47F6-9848-5C4DBC550235}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewModels", "Chloe.ViewModels\Chloe.ViewModels.csproj", "{D48D57EF-E323-4AA8-902D-DCAD5A510776}"
 EndProject
