@@ -2,6 +2,7 @@
 using Chloe.Dtos;
 using Chloe.Http;
 using Chloe.NBAClient.Contracts;
+using System;
 using System.Threading.Tasks;
 
 namespace Chloe.NBAClient

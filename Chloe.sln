@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewModels", "Chloe.V
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Configuration", "Chloe.Configuration\Chloe.Configuration.csproj", "{C2FE0E50-887A-434A-A3EB-76F15F0506D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.PlayersComponent", "Chloe.ViewModels.AllPlayers\Chloe.ViewComponents.PlayersComponent.csproj", "{D47A3CBC-CC8D-4942-9C91-04B39318E8B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.PlayersComponent", "Chloe.ViewComponents.Players\Chloe.ViewComponents.PlayersComponent.csproj", "{D47A3CBC-CC8D-4942-9C91-04B39318E8B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Http", "Chloe.Http\Chloe.Http.csproj", "{450528EB-3057-4F75-8814-170666DF23F0}"
 EndProject
@@ -25,17 +25,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.NBAClient", "Chloe.NB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Dtos", "Chloe.Dtos\Chloe.Dtos.csproj", "{1C5ACFFD-492B-489B-8260-6786E08D3658}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.HeaderComponent", "Chloe.ViewModels.Header\Chloe.ViewComponents.HeaderComponent.csproj", "{AC14BB19-57F7-4DCB-B313-24FE1FB14069}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.HeaderComponent", "Chloe.ViewComponents.Header\Chloe.ViewComponents.HeaderComponent.csproj", "{AC14BB19-57F7-4DCB-B313-24FE1FB14069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.PlayerComponent", "Chloe.ViewModels.Player\Chloe.ViewComponents.PlayerComponent.csproj", "{03AD1190-715A-4E52-A936-46FA243CB90E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.PlayerComponent", "Chloe.ViewComponents.Player\Chloe.ViewComponents.PlayerComponent.csproj", "{03AD1190-715A-4E52-A936-46FA243CB90E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.FooterComponent", "Chloe.ViewModels.Footer\Chloe.ViewComponents.FooterComponent.csproj", "{D3ACC172-4DDD-4F60-B9C6-F188319DB10E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.FooterComponent", "Chloe.ViewComponents.Footer\Chloe.ViewComponents.FooterComponent.csproj", "{D3ACC172-4DDD-4F60-B9C6-F188319DB10E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.SPA", "Chloe.SPA\Chloe.SPA.csproj", "{2598834B-E920-4EF0-9FA3-5806F03FB3A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.Metal", "Chloe.Metal\Chloe.Metal.csproj", "{D7CB5497-59ED-4E18-B658-CE12A1C23800}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.HomeComponent", "Chloe.ViewModels.HomeComponent\Chloe.ViewComponents.HomeComponent.csproj", "{678A1346-C461-4DEC-A538-326597233470}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.HomeComponent", "Chloe.ViewComponents.HomeComponent\Chloe.ViewComponents.HomeComponent.csproj", "{678A1346-C461-4DEC-A538-326597233470}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents", "Chloe.ViewComponents\Chloe.ViewComponents.csproj", "{229C38A9-A09C-4350-AE9E-0BB39979D072}"
 EndProject

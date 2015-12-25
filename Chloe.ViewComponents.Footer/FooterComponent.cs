@@ -1,8 +1,6 @@
 ﻿using Chloe.ViewComponents.FooterComponent.Contracts;
 using Chloe.ViewModels;
-using System;
 using System.Threading.Tasks;
-
 
 namespace Chloe.ViewComponents.FooterComponent
 {
@@ -11,7 +9,6 @@ namespace Chloe.ViewComponents.FooterComponent
         public FooterComponent()
         {
             this.ComponentType = ComponentType.Footer;
-
             this.ViewName = "Footer";
         }
 
@@ -21,8 +18,7 @@ namespace Chloe.ViewComponents.FooterComponent
 
         public Task InvokeAsync()
         {
-            return Task.Run(() => { return new { }; });
-                    
+            return Task.Run(() => { return new { }; });                   
         }
 
         public string ViewLocation { get { return string.Format("Components/_{0}", this.ViewName); } }

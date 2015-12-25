@@ -101,23 +101,23 @@
       <Project>{3c37e3a6-c687-4373-b3a4-cdc95699fc22}</Project>
       <Name>Chloe.NBAClient</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.AllPlayers\Chloe.ViewComponents.PlayersComponent.csproj">
-      <Project>{d47a3cbc-cc8d-4942-9c91-04b39318e8b3}</Project>
-      <Name>Chloe.ViewComponents.PlayersComponent</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.Footer\Chloe.ViewComponents.FooterComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewComponents.Footer\Chloe.ViewComponents.FooterComponent.csproj">
       <Project>{d3acc172-4ddd-4f60-b9c6-f188319db10e}</Project>
       <Name>Chloe.ViewComponents.FooterComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.Header\Chloe.ViewComponents.HeaderComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewComponents.Header\Chloe.ViewComponents.HeaderComponent.csproj">
       <Project>{ac14bb19-57f7-4dcb-b313-24fe1fb14069}</Project>
       <Name>Chloe.ViewComponents.HeaderComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.HomeComponent\Chloe.ViewComponents.HomeComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewComponents.HomeComponent\Chloe.ViewComponents.HomeComponent.csproj">
       <Project>{678a1346-c461-4dec-a538-326597233470}</Project>
       <Name>Chloe.ViewComponents.HomeComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.Player\Chloe.ViewComponents.PlayerComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewComponents.Players\Chloe.ViewComponents.PlayersComponent.csproj">
+      <Project>{d47a3cbc-cc8d-4942-9c91-04b39318e8b3}</Project>
+      <Name>Chloe.ViewComponents.PlayersComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chloe.ViewComponents.Player\Chloe.ViewComponents.PlayerComponent.csproj">
       <Project>{03ad1190-715a-4e52-a936-46fa243cb90e}</Project>
       <Name>Chloe.ViewComponents.PlayerComponent</Name>
     </ProjectReference>

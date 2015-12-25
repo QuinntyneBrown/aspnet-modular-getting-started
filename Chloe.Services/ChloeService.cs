@@ -5,14 +5,12 @@ using Chloe.Metal.Contracts;
 using System.Web.Mvc;
 using Chloe.ViewComponents.PlayerComponent.Contracts;
 using Chloe.ViewComponents.HomeComponent.Contracts;
-using Chloe.ViewComponents.Players.Contracts;
 using Chloe.ViewComponents.FooterComponent.Contracts;
 using Chloe.Data.Contracts;
 using System.Linq;
 using System.Data.Entity;
 using Chloe.ViewComponents.HeaderComponent.Contracts;
-using System.Threading.Tasks;
-using System.Collections.Generic;
+using Chloe.ViewComponents.PlayersComponent.Contracts;
 
 namespace Chloe.Services
 {

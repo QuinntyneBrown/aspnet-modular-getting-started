@@ -4,13 +4,9 @@ using Chloe.Data;
 using Chloe.Data.Contracts;
 using Chloe.Metal;
 using Chloe.Metal.Contracts;
-using Chloe.NBAClient;
 using Chloe.NBAClient.Contracts;
 using Chloe.Services;
 using Chloe.Services.Contracts;
-using Chloe.ViewComponents;
-using Chloe.ViewComponents.Players;
-using Chloe.ViewComponents.Players.Contracts;
 using Chloe.ViewModels.Contracts;
 using Chloe.ViewComponents.FooterComponent;
 using Chloe.ViewComponents.FooterComponent.Contracts;
@@ -20,11 +16,12 @@ using Chloe.ViewComponents.HomeComponent;
 using Chloe.ViewComponents.HomeComponent.Contracts;
 using Chloe.ViewComponents.PlayerComponent;
 using Chloe.ViewComponents.PlayerComponent.Contracts;
-using Chloe.ViewComponents.PlayersComponent;
 using Microsoft.Practices.Unity;
 using System.Web.Mvc;
 using Unity.Mvc5;
 using Chloe.ViewModels;
+using Chloe.ViewComponents.PlayersComponent.Contracts;
+using Chloe.ViewComponents.PlayersComponent;
 
 namespace Chloe.Web
 {

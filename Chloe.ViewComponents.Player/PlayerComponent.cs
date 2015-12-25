@@ -1,9 +1,6 @@
 ﻿using Chloe.Metal.Contracts;
 using Chloe.NBAClient.Contracts;
-using Chloe.ViewModels.Contracts;
 using Chloe.ViewComponents.PlayerComponent.Contracts;
-using System;
-using System.Collections.Generic;
 using Chloe.ViewModels;
 using System.Threading.Tasks;
 

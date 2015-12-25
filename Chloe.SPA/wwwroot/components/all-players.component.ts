@@ -9,3 +9,4 @@ import {Router} from 'angular2/router';
 export class AllPlayersComponent {
 
 }
+

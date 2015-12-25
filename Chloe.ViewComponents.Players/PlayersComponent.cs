@@ -1,7 +1,7 @@
 ﻿using Chloe.NBAClient.Contracts;
-using Chloe.ViewComponents.Players.Contracts;
 using System.Threading.Tasks;
 using Chloe.ViewModels;
+using Chloe.ViewComponents.PlayersComponent.Contracts;
 
 namespace Chloe.ViewComponents.PlayersComponent
 {
@@ -14,7 +14,6 @@ namespace Chloe.ViewComponents.PlayersComponent
             this.ViewName = "Players";
         }
 
-        
         public Task InvokeAsync()
         {
             return Task.Run(async () =>

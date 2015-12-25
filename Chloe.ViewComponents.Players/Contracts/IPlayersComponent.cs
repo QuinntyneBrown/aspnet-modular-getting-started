@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chloe.ViewComponents.Players.Contracts
+namespace Chloe.ViewComponents.PlayersComponent.Contracts
 {
     public interface IPlayersComponent: IComponent
     {

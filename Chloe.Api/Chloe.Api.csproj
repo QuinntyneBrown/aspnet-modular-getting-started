@@ -183,11 +183,11 @@
       <Project>{b23c457f-a981-465d-885c-46030306a88a}</Project>
       <Name>Chloe.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.AllPlayers\Chloe.ViewComponents.PlayersComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewComponents.Players\Chloe.ViewComponents.PlayersComponent.csproj">
       <Project>{d47a3cbc-cc8d-4942-9c91-04b39318e8b3}</Project>
       <Name>Chloe.ViewComponents.PlayersComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chloe.ViewModels.Player\Chloe.ViewComponents.PlayerComponent.csproj">
+    <ProjectReference Include="..\Chloe.ViewComponents.Player\Chloe.ViewComponents.PlayerComponent.csproj">
       <Project>{03ad1190-715a-4e52-a936-46fa243cb90e}</Project>
       <Name>Chloe.ViewComponents.PlayerComponent</Name>
     </ProjectReference>
