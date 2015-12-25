@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Chloe.Metal;
+using System;
+using System.Web.Hosting;
 using System.Web.Routing;
 
 namespace Chloe.Web
@@ -8,6 +10,7 @@ namespace Chloe.Web
 
         protected void Application_Start(object sender, EventArgs e)
         {
+            HostingEnvironment.RegisterVirtualPathProvider(new EmbeddedVirtualPathProvider());
             UnityConfig.RegisterComponents();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }

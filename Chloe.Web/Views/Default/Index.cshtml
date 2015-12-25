@@ -1,5 +1,6 @@
 ﻿@model IPageViewModel
 
+
 @foreach(var component in Model.GetBodyComponents())
 {
     @Html.Partial(component.ViewLocation,component)
