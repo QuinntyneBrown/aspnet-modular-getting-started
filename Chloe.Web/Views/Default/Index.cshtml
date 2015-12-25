@@ -1,7 +1,7 @@
 ﻿@model IPageViewModel
 
 
-@Html.Partial("~/Views/Components/Test/MyTest.cshtml")
+@Html.Partial("~/Views/Components/Test/MyTest.cshtml", Model.GetComponentByName("Home"))
 
 @foreach(var component in Model.GetBodyComponents())
 {

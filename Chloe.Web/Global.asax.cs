@@ -4,6 +4,7 @@ using System.Web.Hosting;
 using System.Web.Routing;
 using System.Reflection;
 using System.Linq;
+using System.Web.Optimization;
 
 namespace Chloe.Web
 {
@@ -21,7 +22,7 @@ namespace Chloe.Web
             //    //from the source file so you can change the content while the app is running without needing to rebuild
             //    //{typeof(SomeAssembly.SomeClass).Assembly, @"..\SomeAssembly"} 
             //});
-
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
             UnityConfig.RegisterComponents();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }

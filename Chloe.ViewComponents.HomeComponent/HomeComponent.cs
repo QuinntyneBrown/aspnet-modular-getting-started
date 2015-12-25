@@ -1,10 +1,10 @@
 ﻿using Chloe.ViewComponents.HomeComponent.Contracts;
-using System;
 using Chloe.ViewModels;
 using System.Threading.Tasks;
 
 namespace Chloe.ViewComponents.HomeComponent
 {
+    [ClientDenpendency("~/jQuery.js")]
     public class HomeComponent : IHomeComponent
     {
         public HomeComponent()

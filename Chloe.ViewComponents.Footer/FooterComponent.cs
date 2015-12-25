@@ -18,6 +18,7 @@ namespace Chloe.ViewComponents.FooterComponent
 
         public Task InvokeAsync()
         {
+
             return Task.Run(() => { return new { }; });                   
         }
 

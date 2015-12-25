@@ -87,7 +87,9 @@
     <EmbeddedResource Include="Views\Components\Test\MyTest.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="jQuery.js" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="app.js" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 using System.Reflection;
 using System.Linq;
-namespace Chloe.Web.App_Code
+namespace Chloe.Web
 {
     public class RegisterVirtualPathProvider
     {

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientDenpendencyAttribute.cs" />
     <Compile Include="ComponentType.cs" />
     <Compile Include="Contracts\IComponent.cs" />
     <Compile Include="Contracts\IMetaDataViewModel.cs" />
