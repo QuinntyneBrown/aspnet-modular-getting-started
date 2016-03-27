@@ -11,5 +11,7 @@ namespace Chloe.ViewModels.Contracts
         IComponent GetComponentByName(string name);
 
         ICollection<IComponent> GetBodyComponents();
+
+        T Inject<T>();
     }
 }

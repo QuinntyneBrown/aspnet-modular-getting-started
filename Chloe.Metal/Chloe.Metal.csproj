@@ -86,6 +86,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Chloe.ViewModels.Contracts\Chloe.ViewModels.Contracts.csproj">
+      <Project>{f26b2a5f-60da-4d58-a768-0bc053b3fc33}</Project>
+      <Name>Chloe.ViewModels.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Chloe.ViewModels\Chloe.ViewModels.csproj">
       <Project>{d48d57ef-e323-4aa8-902d-dcad5a510776}</Project>
       <Name>Chloe.ViewModels</Name>

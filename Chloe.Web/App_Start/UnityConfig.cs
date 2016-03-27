@@ -27,25 +27,28 @@ namespace Chloe.Web
 {
     public static class UnityConfig
     {
+        public static IUnityContainer Container;
+
         public static void RegisterComponents()
         {
-			var container = new UnityContainer();
-            container.RegisterType<IDbContext, ChloeContext>();
-            container.RegisterType<IChloeUow, ChloeUow>();
-            container.RegisterType<IRepositoryProvider, RepositoryProvider>();
-            container.RegisterType<IChloeService, ChloeService>();
-            container.RegisterType<INBAClient, NBAClient.NBAClient>();
-            container.RegisterType<IHomeComponent, HomeComponent>();
-            container.RegisterType<IPlayersComponent, PlayersComponent>();
-            container.RegisterType<IAppConfiguration, AppConfiguration>();
-            container.RegisterType<IAppConfigurationProvider, AppConfigurationProvider>();
-            container.RegisterType<IRouteParamsProvider, RouteParamsProvider>();
-            container.RegisterType<IPageViewModel, PageViewModel>();
-            container.RegisterType<IPlayerComponent, PlayerComponent>();
-            container.RegisterType<IHeaderComponent, HeaderComponent>();
-            container.RegisterType<IFooterComponent, FooterComponent>();
-            container.RegisterType<IMetaDataViewModel, MetaDataViewModel>();
-            DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+			Container = new UnityContainer();
+            Container.RegisterType<IDbContext, ChloeContext>();
+            Container.RegisterType<IChloeUow, ChloeUow>();
+            Container.RegisterType<IRepositoryProvider, RepositoryProvider>();
+            Container.RegisterType<IChloeService, ChloeService>();
+            Container.RegisterType<INBAClient, NBAClient.NBAClient>();
+            Container.RegisterType<IHomeComponent, HomeComponent>();
+            Container.RegisterType<IPlayersComponent, PlayersComponent>();
+            Container.RegisterType<IAppConfiguration, AppConfiguration>();
+            Container.RegisterType<IAppConfigurationProvider, AppConfigurationProvider>();
+            Container.RegisterType<IRouteParamsProvider, RouteParamsProvider>();
+            Container.RegisterType<IPageViewModel, PageViewModel>();
+            Container.RegisterType<IPlayerComponent, PlayerComponent>();
+            Container.RegisterType<IHeaderComponent, HeaderComponent>();
+            Container.RegisterType<IFooterComponent, FooterComponent>();
+            Container.RegisterType<IMetaDataViewModel, MetaDataViewModel>();
+            Container.RegisterType<IContainerProvider, ContainerProvider>();
+            DependencyResolver.SetResolver(new UnityDependencyResolver(Container));
         }
     }
 }

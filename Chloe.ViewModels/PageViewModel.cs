@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Practices.Unity;
 
 namespace Chloe.ViewModels
 {
     public class PageViewModel: IPageViewModel
     {
-        public PageViewModel()
+        public PageViewModel(IContainerProvider containerProvider)
         {
             this.Components = new HashSet<IComponent>();
+            this.container = containerProvider.GetContainer();
         }
 
         public string Title { get; set; }
@@ -38,5 +40,13 @@ namespace Chloe.ViewModels
         {
             return this.Components.Where(x => x.ViewName != "Header" && x.ViewName != "Footer").ToList();            
         }
+
+        public T Inject<T>()
+        {
+
+            return container.Resolve<T>();
+        }
+
+        public IUnityContainer container;
     }
 }
