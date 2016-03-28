@@ -1,9 +1,10 @@
-﻿@model IPageViewModel
+﻿
 
+@{ 
+    var HelloWorld = Inject<Chloe.ViewComponents.Contracts.IHelloWorldComponent>();
 
-@Html.Partial("~/Views/Components/Test/MyTest.cshtml", Model.GetComponentByName("Home"))
-
-@foreach(var component in Model.GetBodyComponents())
-{
-    @Html.Partial(component.ViewLocation,component)
+    var s = HelloWorld.Message;
 }
+
+
+<h1>@HelloWorld.Message</h1>

@@ -163,6 +163,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WebViewPage.cs" />
     <Content Include="App_Code\RegisterVirtualPathProvider.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -219,6 +220,10 @@
       <Project>{ac14bb19-57f7-4dcb-b313-24fe1fb14069}</Project>
       <Name>Chloe.ViewComponents.HeaderComponent</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Chloe.ViewComponents.HelloWorld\Chloe.ViewComponents.HelloWorldComponent.csproj">
+      <Project>{fc5c5ca0-da2f-4649-9fad-04cd4a327dfe}</Project>
+      <Name>Chloe.ViewComponents.HelloWorldComponent</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Chloe.ViewComponents.HomeComponent\Chloe.ViewComponents.HomeComponent.csproj">
       <Project>{678a1346-c461-4dec-a538-326597233470}</Project>
       <Name>Chloe.ViewComponents.HomeComponent</Name>
@@ -230,6 +235,10 @@
     <ProjectReference Include="..\Chloe.ViewComponents.Player\Chloe.ViewComponents.PlayerComponent.csproj">
       <Project>{03ad1190-715a-4e52-a936-46fa243cb90e}</Project>
       <Name>Chloe.ViewComponents.PlayerComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chloe.ViewComponents\Chloe.ViewComponents.csproj">
+      <Project>{229c38a9-a09c-4350-ae9e-0bb39979d072}</Project>
+      <Name>Chloe.ViewComponents</Name>
     </ProjectReference>
     <ProjectReference Include="..\Chloe.ViewModels.Contracts\Chloe.ViewModels.Contracts.csproj">
       <Project>{f26b2a5f-60da-4d58-a768-0bc053b3fc33}</Project>

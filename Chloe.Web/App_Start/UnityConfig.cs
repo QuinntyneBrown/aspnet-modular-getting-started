@@ -22,6 +22,8 @@ using Unity.Mvc5;
 using Chloe.ViewModels;
 using Chloe.ViewComponents.PlayersComponent.Contracts;
 using Chloe.ViewComponents.PlayersComponent;
+using Chloe.ViewComponents.Contracts;
+//using Chloe.ViewComponents.HelloWorldComponent;
 
 namespace Chloe.Web
 {
@@ -48,6 +50,7 @@ namespace Chloe.Web
             Container.RegisterType<IFooterComponent, FooterComponent>();
             Container.RegisterType<IMetaDataViewModel, MetaDataViewModel>();
             Container.RegisterType<IContainerProvider, ContainerProvider>();
+            Container.RegisterType<IHelloWorldComponent, Chloe.ViewComponents.HelloWorldComponent.HelloWorldComponent>();
             DependencyResolver.SetResolver(new UnityDependencyResolver(Container));
         }
     }

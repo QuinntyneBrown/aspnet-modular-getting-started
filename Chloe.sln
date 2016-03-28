@@ -43,6 +43,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewComponents", "ViewCompo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewModels.Contracts", "Chloe.ViewModels.Contracts\Chloe.ViewModels.Contracts.csproj", "{F26B2A5F-60DA-4D58-A768-0BC053B3FC33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chloe.ViewComponents.HelloWorldComponent", "Chloe.ViewComponents.HelloWorld\Chloe.ViewComponents.HelloWorldComponent.csproj", "{FC5C5CA0-DA2F-4649-9FAD-04CD4A327DFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{F26B2A5F-60DA-4D58-A768-0BC053B3FC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F26B2A5F-60DA-4D58-A768-0BC053B3FC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F26B2A5F-60DA-4D58-A768-0BC053B3FC33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC5C5CA0-DA2F-4649-9FAD-04CD4A327DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC5C5CA0-DA2F-4649-9FAD-04CD4A327DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC5C5CA0-DA2F-4649-9FAD-04CD4A327DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC5C5CA0-DA2F-4649-9FAD-04CD4A327DFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,5 +142,6 @@ Global
 		{D3ACC172-4DDD-4F60-B9C6-F188319DB10E} = {D9135A45-3F61-4D13-8F7D-A92D2863D792}
 		{678A1346-C461-4DEC-A538-326597233470} = {D9135A45-3F61-4D13-8F7D-A92D2863D792}
 		{229C38A9-A09C-4350-AE9E-0BB39979D072} = {D9135A45-3F61-4D13-8F7D-A92D2863D792}
+		{FC5C5CA0-DA2F-4649-9FAD-04CD4A327DFE} = {D9135A45-3F61-4D13-8F7D-A92D2863D792}
 	EndGlobalSection
 EndGlobal
